@@ -537,7 +537,7 @@
       .when('/currencydetails', {
         templateUrl: 'views/organization/currencydetails.html'
       })
-      .when('/createcurrencydetails', {
+      .when('/createcurrencyexchange', {
         templateUrl: 'views/organization/createcurrencydetails.html'
       })
       .when('/viewcurrencydetails/:id', {
@@ -1064,6 +1064,12 @@
        .when('/editpropertydefinition/:id', {
         templateUrl: 'views/organization/editpropertydefinition.html'
       })
+      
+      .when('/addbill/:id', {
+          templateUrl : 'views/crm/tickets/addbill.html'
+        })
+        
+      
       ;
      
     $locationProvider.html5Mode(false);

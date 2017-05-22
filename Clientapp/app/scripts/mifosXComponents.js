@@ -269,6 +269,7 @@ define(['underscore', 'mifosX'], function() {
       'system/CreateEventValidationController',
       'system/ProvisionController',
       'client/AddDeviceController',
+      'client/AddBillController',
       'main/ViewCheckerinboxController',
       'main/ViewMakerCheckerTaskController',
       'configurations/PaymentGatewayConfigurationController',

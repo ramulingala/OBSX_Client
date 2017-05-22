@@ -185,7 +185,7 @@
       
 	<tab heading="Currency Config" select="getCurrencyConfig()" ng-show="$parent.PermissionService.showMenu('READ_CURRENCY')"  active="currencyConfigTab">
         <div class="pull-right btn-group">
-         <a data-ng-show="PermissionService.showMenu('UPDATE_CURRENCY')" href="#/createCurrencyMapping" class="btn btn-primary"><i class="icon-plus icon-white"></i> Edit</a>
+         <a data-ng-show="PermissionService.showMenu('UPDATE_CURRENCY')" href="#/createCurrencyMapping" class="btn btn-primary"><i class="icon-plus icon-white"></i> Create</a>
         </div>
         <div class="row-fluid">
            <input data-ng-model="filterText" type="text" class="span marginbottom0px" placeholder="{{'placeholder.searchbar' | translate}}">
@@ -202,6 +202,9 @@
 	           <td>{{currency.code}}</td>
      		 </tbody>
           </table>
+          
+          
+          
        <div data-ng-show="hideview">
             <br>
         	<input  type="text" class="form-control input-xxlarge" data-ng-model="selected" placeholder="New Currency"
