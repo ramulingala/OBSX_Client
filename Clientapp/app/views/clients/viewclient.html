@@ -1319,6 +1319,48 @@
     	</table>
 		</div>
 	</tab>
+	
+	
+	<tab heading="Billing Profile"  select="getAllBillingProfiles()">
+		<div class="pull-right">
+					<a  href="#/addbill/{{client.id}}" class="btn btn-primary"><i class="icon-plus icon-white"></i>{{'label.add' | translate}}</a>
+				</div>
+			<div class="row-fluid ">
+			<table class="table">
+      		  <thead>
+          		 <tr class="graybg">
+				 	<th>{{'table.billdayofmonth' | translate}}</th>
+					<th>{{'table.billcurrency' | translate}}</th>
+					<th>{{'table.billfrequency' | translate}}</th>
+					<th>{{'table.billsegment' | translate}}</th>
+					<th>{{'table.nextbillday' | translate}}</th>
+					<th>{{'table.lastbillday' | translate}}</th>
+					<th>{{'table.paymenttype' | translate}}</th>
+					<th>Actions</th>
+				</tr>
+       		 </thead>
+     		 <!--  <tbody>
+          			<tr class="pointer-main" ng-repeat="provisioningdata in provisioningdatas  | filter:filterText">
+					<td class="pointer" >{{provisioningdata.id}}</td>
+					<td class="pointer" >{{provisioningdata.clientId}}</td>  
+					<td class="pointer" >{{provisioningdata.requestType}}</td>
+					<td ng-show="provisioningdata.isProcessed == 'F'" class="pointer" >Failure</td>
+					<td ng-show="provisioningdata.isProcessed == 'Y'" class="pointer" >Success</td>
+					<td ng-show="provisioningdata.isProcessed == 'N'" class="pointer" >Processing</td>
+					<td ng-show="provisioningdata.isProcessed == 'C'" class="pointer" >Success</td>
+					<td class="pointer" >{{provisioningdata.receiveMessage}}</td>
+					  <td><a ng-show="provisioningdata.isProcessed == 'F' " ng-click="reProcess(provisioningdata.id)" popover="Re Process" popover-trigger="mouseenter"><i class="icon-play icon-white"></i></a></td>
+					   <td><a ng-show="provisioningdata.isProcessed == 'F' || provisioningdata.isProcessed == 'N'" ng-click="confirmRequest(provisioningdata.id)" popover="Confirm Request" popover-trigger="mouseenter"><i class="icon-ok icon-white"></i></a></td>
+					<td><button style="padding:3px 5px;" class="btn btn-primary" ng-hide="provisioningdata.requestType=='RETRACK'"
+								ng-click="sentMessagePopup(provisioningdata.id)" data-popover-trigger="mouseenter" data-popover="To See Click on Me">
+								<i class="icon-envelope icon-white"></i></button></td> 
+				</tr>
+        	</tbody> -->
+    	</table>
+		</div>
+	</tab>
+	
+	
 	</tabset>	
 
    			<!-- ************************ start of InVenture code ************************ -->
