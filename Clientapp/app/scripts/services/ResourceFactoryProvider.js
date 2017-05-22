@@ -461,10 +461,10 @@
             getProspects: {method: 'GET', params: {}},
            }),
       
-       currencyResource: defineResource(apiVer + "/countrycurrency/:id/:resourceType", {id:'@id', resourceType:'@resourceType'}, {
+       currencyResource: defineResource(apiVer + "/currencyexchange/:id/:resourceType", {id:'@id', resourceType:'@resourceType'}, {
             update: {method: 'PUT', params: {}}
            }),
-       currencyTemplateResource: defineResource(apiVer + "/countrycurrency/template", {}, {
+       currencyTemplateResource: defineResource(apiVer + "/currencyexchange/template", {}, {
            get: {method: 'GET', params: {}}
            }),
            
